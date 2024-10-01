@@ -14,6 +14,8 @@ type TimeDisplayProps = {
     locale?: string;  // Optionally allow locale, defaulting to 'en-GB'
 };
 
+// ... other imports and code
+
 const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' }) => {
     const [currentTime, setCurrentTime] = useState('');
 
@@ -120,7 +122,7 @@ export const Header = () => {
                 justifyContent="flex-end" alignItems="center"
                 textVariant="body-default-s">
                 { display.time && (
-                    <TimeDisplay timeZone={person.location}/>
+                    <TimeDisplay timeZone="America/New_York"/>
                 )}
             </Flex>
         </Flex>
