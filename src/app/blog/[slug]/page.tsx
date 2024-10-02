@@ -36,30 +36,30 @@ export function generateMetadata({ params }: BlogParams) {
 		? `https://${baseURL}${image}`
 		: `https://${baseURL}/og?title=${title}`;
 
-	return {
-		title,
-		description,
-		openGraph: {
+		return {
 			title,
 			description,
-			type: 'article',
-			publishedTime,
-			url: `https://${baseURL}/blog/${post.slug}`,
-			images: [
-				{
-					src: "avatar.jpg",
-				},
-			],
-		},
+			openGraph: {
+				title,
+				description,
+				type: 'website',
+				url: `https://${baseURL}`,
+				images: [
+					{
+						url: ogImage,
+						alt: title,
+					},
+				],
+			},
 			twitter: {
-			card: 'summary_large_image',
-			title,
-			description,
-			images: "avatar.jpg",
-		},
+				card: 'summary_large_image',
+				title,
+				description,
+				images: [ogImage],
+			},
+		};
 	}
-}
-
+	
 export default function Blog({ params }: BlogParams) {
 	let post = getPosts(['src', 'app', 'blog', 'posts']).find((post) => post.slug === params.slug)
 
