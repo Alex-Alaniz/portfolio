@@ -8,7 +8,7 @@ import { baseURL, mailchimp } from '@/app/resources'
 export function generateMetadata() {
 	const title = blog.title;
 	const description = blog.description;
-	const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
+	const ogImage = `https://raw.githubusercontent.com/devAlexDotEth/portfolio/refs/heads/main/public/images/avatar.jpg`;
 
 	return {
 		title,
@@ -17,10 +17,10 @@ export function generateMetadata() {
 			title,
 			description,
 			type: 'website',
-			url: `https://${baseURL}/blog`,
+			url: `https://${baseURL}`,
 			images: [
 				{
-					src: "avatar.jpg",
+					url: ogImage,
 					alt: title,
 				},
 			],
@@ -29,7 +29,7 @@ export function generateMetadata() {
 			card: 'summary_large_image',
 			title,
 			description,
-			images: "avatar.jpg",
+			images: [ogImage],
 		},
 	};
 }

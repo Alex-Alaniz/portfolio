@@ -1,4 +1,5 @@
-const baseURL = 'nextjs-portfolio.up.railway.app'
+const baseURL = 'https://www.alexalaniz.com/'
+
 
 const routes = {
     '/':        true,

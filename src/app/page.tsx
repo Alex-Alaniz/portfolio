@@ -10,7 +10,7 @@ import { Posts } from '@/app/blog/components/Posts';
 export function generateMetadata() {
 	const title = home.title;
 	const description = home.description;
-	const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
+	const ogImage = `https://raw.githubusercontent.com/devAlexDotEth/portfolio/refs/heads/main/public/images/avatar.jpg`;
 
 	return {
 		title,
@@ -22,7 +22,7 @@ export function generateMetadata() {
 			url: `https://${baseURL}`,
 			images: [
 				{
-					src: "avatar.jpg",
+					url: ogImage,
 					alt: title,
 				},
 			],
@@ -31,7 +31,7 @@ export function generateMetadata() {
 			card: 'summary_large_image',
 			title,
 			description,
-			src: "avatar.jpg",
+			images: [ogImage],
 		},
 	};
 }
