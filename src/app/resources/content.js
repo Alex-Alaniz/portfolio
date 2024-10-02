@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Software Engineer and Builder</>,
-    subline: <>I'm Ale𝕏 , a Software Engineer & Founder at <InlineCode>BearifiedCo</InlineCode>,where I craft intuitive<br/> user experiment experiences. After hours, I build my own projects.</>
+    subline: <>I'm Ale𝕏 , a Software Engineer & Founder at <InlineCode>BearifiedCo</InlineCode>,where we craft intuitive<br/> user experiment experiences. After hours, I build my own projects.</>
 }
 
 const about = {
@@ -76,9 +76,9 @@ const about = {
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'BearifiedCo',
+                timeframe: '2023 - Present',
+                role: 'Founder & Software Engineer',
                 achievements: [
                     <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
                     <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
