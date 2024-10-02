@@ -50,7 +50,7 @@ export function generateMetadata({ params }: WorkParams) {
 			url: `https://${baseURL}/work/${post.slug}`,
 			images: [
 				{
-					url: "avatar.jpg",
+					src: "avatar.jpg",
 				},
 			],
 		},

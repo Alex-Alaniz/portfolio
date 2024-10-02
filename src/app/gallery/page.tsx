@@ -17,7 +17,7 @@ export function generateMetadata() {
 			url: `https://${baseURL}/gallery`,
 			images: [
 				{
-					url: "avatar.jpg",
+					src: "avatar.jpg",
 					alt: title,
 				},
 			],

@@ -47,7 +47,7 @@ export function generateMetadata({ params }: BlogParams) {
 			url: `https://${baseURL}/blog/${post.slug}`,
 			images: [
 				{
-					url: "avatar.jpg",
+					src: "avatar.jpg",
 				},
 			],
 		},

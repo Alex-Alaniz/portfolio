@@ -22,7 +22,7 @@ export function generateMetadata() {
 			url: `https://${baseURL}`,
 			images: [
 				{
-					url: "avatar.jpg",
+					src: "avatar.jpg",
 					alt: title,
 				},
 			],
@@ -31,7 +31,7 @@ export function generateMetadata() {
 			card: 'summary_large_image',
 			title,
 			description,
-			images: "avatar.jpg",
+			src: "avatar.jpg",
 		},
 	};
 }
