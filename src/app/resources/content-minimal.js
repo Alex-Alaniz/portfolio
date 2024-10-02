@@ -24,22 +24,22 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/devAlexDotEth/portfolio',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/alex-alaniz-4981578a/',
     },
     {
-        name: 'X',
+        name: 'Follow',
         icon: 'x',
-        link: '',
+        link: 'https://x.com/AlexDotEth',
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:alex@bearified.xyz',
     },
 ]
 
@@ -84,8 +84,8 @@ const about = {
                 timeframe: '2022 - Present',
                 role: 'Senior Design Engineer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>As the founder of BearifiedCo, I am dedicated to empowering developers, artists, and creators in the MemeCoin & NFT space through innovative smart contract development and robust Tokenomics & NFT solutions offered by BearifiedLabs. Our mission is to leverage blockchain technology to create transformative and secure experiences that enhance engagement and utility.</>,
+                    <>BearifiedCo explores the intersection of fashion and digital assets, while BearifiedIP supports creators in navigating the complexities of intellectual property in a decentralized landscape.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
