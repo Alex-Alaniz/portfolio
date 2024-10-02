@@ -71,7 +71,7 @@ const about = {
         title: 'Introduction',
         description:
             <>
-                <p>Ale𝕏  is a NYC🗽-based software engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</p>
+                <p>Ale𝕏 | NYC🗽 based software engineer with a passion for transforming complex challenges into simple, elegant engineering solutions. My work spans digital interfaces, interactive experiences, and the convergence of engineering and technology.</p>
                 <p>My work spans a diverse range of disciplines, from crafting <Link href="/work">intuitive digital interfaces</Link> to designing immersive interactive experiences. I’m particularly interested in the intersection of design and engineering, where aesthetics meet functionality. I believe that the best solutions arise from a balance of creativity and technical rigor, and I enjoy the challenge of finding that balance in every project I undertake.</p>
             </>
     },

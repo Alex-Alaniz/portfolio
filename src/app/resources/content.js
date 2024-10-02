@@ -69,7 +69,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Ale𝕏  is a NYC🗽-based software engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Ale𝕏 | NYC🗽 based software engineer with a passion for transforming complex challenges into simple, elegant engineering solutions. My work spans digital interfaces, interactive experiences, and the convergence of engineering and technology.</>
     },
     work: {
         display: true, // set to false to hide this section
