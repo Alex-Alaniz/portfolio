@@ -64,7 +64,7 @@ const about = {
     },
     calendar: {
         display: true,
-        link: 'https://cal.com'
+        link: 'https://calendly.com/alex-alexalaniz'
     },
     intro: {
         display: true,
@@ -93,12 +93,13 @@ const about = {
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'E𝕏',
+                timeframe: '2012 - 2022',
+                role: 'Information Technology',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Maglaw</>,
+                    <>Lyft</>,
+                    <>Apple </>
                 ],
                 images: [ ]
             }
@@ -109,7 +110,7 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of NYC🗽',
+                name: 'University of Life',
                 description: <>Studied software engineering.</>,
             },
             {
@@ -123,8 +124,8 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'AI Prototyping',
+                description: <>Able to prototype with AI at an accelerated pace.</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-02.jpg',
