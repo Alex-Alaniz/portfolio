@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 		siteName: `${person.firstName}'s Portfolio`,
 		locale: 'en_US',
 		type: 'website',
+		images: "avatar.jpg",
 	},
 	robots: {
 		index: true,
