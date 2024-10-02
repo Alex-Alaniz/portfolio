@@ -47,7 +47,7 @@ export function generateMetadata({ params }: BlogParams) {
 			url: `https://${baseURL}/blog/${post.slug}`,
 			images: [
 				{
-					url: ogImage,
+					url: "avatar.jpg",
 				},
 			],
 		},
@@ -55,7 +55,7 @@ export function generateMetadata({ params }: BlogParams) {
 			card: 'summary_large_image',
 			title,
 			description,
-			images: [ogImage],
+			images: "avatar.jpg",
 		},
 	}
 }

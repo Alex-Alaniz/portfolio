@@ -50,7 +50,7 @@ export function generateMetadata({ params }: WorkParams) {
 			url: `https://${baseURL}/work/${post.slug}`,
 			images: [
 				{
-					url: ogImage,
+					url: "avatar.jpg",
 				},
 			],
 		},
@@ -58,7 +58,7 @@ export function generateMetadata({ params }: WorkParams) {
 			card: 'summary_large_image',
 			title,
 			description,
-			images: [ogImage],
+			images: "avatar.jpg",
 		},
 	}
 }

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 	description: home.description,
 	openGraph: {
 		title: `${person.firstName}'s Portfolio`,
-		description: 'Portfolio website showcasing my work.',
+		description: 'Ale𝕏, Software Engineer | Personal Ale𝕏, Software Engineer | Personal Portfolio website showcasing my work..',
 		url: baseURL,
 		siteName: `${person.firstName}'s Portfolio`,
 		locale: 'en_US',
