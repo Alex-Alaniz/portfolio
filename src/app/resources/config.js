@@ -42,6 +42,15 @@ const bearco = {
     tokenAddress: 'FdFUGJSzJXDCZemQbkBwYs3tZEvixyEc8cZfRqJrpump',
     pumpFunUrl: 'https://pump.fun/coin/FdFUGJSzJXDCZemQbkBwYs3tZEvixyEc8cZfRqJrpump',
     livestreamEmbed: 'https://pump.fun/coin/FdFUGJSzJXDCZemQbkBwYs3tZEvixyEc8cZfRqJrpump',
+    // Direct OBS streaming config (Livepeer)
+    // Set these env vars to enable HD streaming directly from OBS
+    // LIVEPEER_API_KEY - Your Livepeer Studio API key
+    // LIVEPEER_STREAM_ID - Your stream ID from Livepeer
+    // LIVEPEER_PLAYBACK_ID - Your playback ID from Livepeer
+    directStream: {
+        enabled: process.env.NEXT_PUBLIC_DIRECT_STREAM_ENABLED === 'true',
+        provider: 'livepeer', // 'livepeer' | 'mux' | 'custom'
+    },
 }
 
 const mailchimp = {
