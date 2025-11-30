@@ -1,0 +1,70 @@
+---
+title: "Building an Autonomous AI Coding Workflow with Claude Opus"
+publishedAt: "2024-11-20"
+summary: "How I built an agentic coding workflow that runs continuously, managed by Claude Opus with multi-machine coordination."
+---
+
+AI isn't just a coding assistant anymore — it's becoming the primary developer. Here's how I built an autonomous coding workflow that ships real products.
+
+## The Setup
+
+The workflow runs on Claude Opus 4.5, the most capable model for complex reasoning and code generation. But the magic isn't in the model — it's in the orchestration.
+
+## Key Components
+
+### Session Management
+
+Each coding session maintains state across multiple invocations. The system tracks:
+
+- Current task context
+- Files modified
+- Tests run
+- Errors encountered
+
+This allows Claude to pick up exactly where it left off, even across machine restarts.
+
+### Multi-Machine Coordination
+
+Running on multiple machines simultaneously required solving coordination problems:
+
+- Shared task queues via Redis
+- Lock mechanisms for file modifications
+- Progress synchronization
+
+### Autonomous Task Generation
+
+The system doesn't just execute tasks — it generates them. Given a high-level goal like "implement user authentication," Claude breaks it down into:
+
+1. Database schema design
+2. API endpoint implementation
+3. Frontend integration
+4. Test coverage
+5. Documentation
+
+Each sub-task is executed autonomously.
+
+## Production Hardening
+
+Getting this to run reliably in production required:
+
+- **Retry logic** for API failures
+- **Health checks** for session monitoring
+- **One-click startup** scripts
+- **Automatic recovery** from errors
+
+## Results
+
+The workflow now handles significant portions of BearifiedCo development. It's particularly effective for:
+
+- CRUD operations
+- API integrations
+- Test writing
+- Documentation
+
+Human oversight is still essential for architecture decisions and complex business logic. But the mundane work? That's automated.
+
+## The Future
+
+This is just the beginning. As models improve, the autonomous capability will expand. The goal isn't to replace developers — it's to amplify them.
+
+Imagine a future where you describe what you want built, and it just... gets built. We're closer than you think.

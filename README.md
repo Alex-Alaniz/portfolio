@@ -1,79 +1,45 @@
-# **Build your portfolio with Once UI's Magic Portfolio**
+# **Ale𝕏 Alaniz | BearifiedCo Portfolio**
 
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+Personal portfolio and showcase for BearifiedCo — a tokenized software development agency on Solana.
 
-**1. Clone the repository**
-```
-git clone https://github.com/once-ui-system/magic-portfolio.git
-```
+## **Quick Start**
 
-**2. Install dependencies**
-```
+**Requirements:** Node.js v18.17+
+
+```bash
+# Install dependencies
 npm install
-```
 
-**3. Run dev server**
-```
+# Run development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
-**4. Edit config**
-```
-src/app/resources/config
-```
+## **Structure**
 
-**5. Edit content**
-```
-src/app/resources/content
-```
+- **Config:** `src/app/resources/config.js` - Site settings, theming, routes
+- **Content:** `src/app/resources/content.js` - Personal info, ventures, skills
+- **Blog:** `src/app/blog/posts/*.mdx` - Blog posts
+- **Projects:** `src/app/work/projects/*.mdx` - Project showcases
 
-**6. Create blog posts / projects**
-```
-Add a new .mdx file to src/app/blog/posts or src/app/work/projects
-```
+## **$BEARCO Token**
 
-# **Features**
+This portfolio is part of BearifiedCo's tokenized software agency built in public on Solana.
 
-## **Once UI**
-- All tokens, components & features of [Once UI](https://once-ui.com) (v0.3.1)
+- **Token:** [$BEARCO on pump.fun](https://pump.fun/coin/FdFUGJSzJXDCZemQbkBwYs3tZEvixyEc8cZfRqJrpump)
+- **24/7 Livestream:** Watch development happen live
+- **Community:** Join the $BEARCO movement
 
-## **SEO**
-- Automatic open-graph and X image generation with next/og
-- Automatic schema and metadata generation based on the content file
+## **Connect**
 
-## **Design**
-- Responsive layout optimized for all screen sizes
-- Timeless design without heavy animations and motion
-- Endless customization options through [data attributes](https://once-ui.com/docs/theming)
+- X: [@AlexDotEth](https://x.com/AlexDotEth)
+- GitHub: [Alex-Alaniz](https://github.com/Alex-Alaniz)
+- LinkedIn: [alex-alaniz](https://www.linkedin.com/in/alex-alaniz-4981578a/)
 
-TIP:
-You try pre-built designs by changing the imports for the config and content in src/app/resources/index.ts
+## **Deploy**
 
-## **Content**
-- Render sections conditionally based on the content file
-- Enable or disable pages for blog, work, gallery and about / CV
-- Generate and display social links automatically
-- Set up password protection for URLs
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAlex-Alaniz%2Fportfolio)
 
-# **Authors**
-
-Connect with us on X or LinkedIn.
-
-Lorant Toth: [X](https://x.com/lorant_one), [LinkedIn](https://www.linkedin.com/in/tothlorant/)  
-Zsofia Komaromi: [X](https://x.com/zsofiakomaromi), [LinkedIn](https://www.linkedin.com/in/zsofiakomaromi/)
-
-# **Get involved**
-
-- Join the [Once UI Discord server](https://discord.com/invite/5EyAQ4eNdS) and share your portfolio with designers and developers!
-- Report a [bug](https://github.com/once-ui-system/magic-portfolio/issues/new?labels=bug&template=bug_report.md).
-
-# **License**
-
-Distributed under the CC BY-NC 4.0 License.
-- Commercial usage is not allowed.
-- Attribution is required.
-
-See `LICENSE.txt` for more information.
-
-# **Deploy with Vercel**
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=https%3A%2F%2Fonce-ui.com%2Fimages%2Ftemplates%2Fmagic-portfolio%2Fcover.jpg)
+Built with Next.js 14 and deployed on Vercel.

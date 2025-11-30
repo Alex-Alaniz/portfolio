@@ -24,8 +24,7 @@ export const Footer = () => {
                         {person.name}
                     </Text>
                     <Text onBackground="neutral-weak">
-                        {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
-                        / Build your portfolio with <SmartLink style={{marginLeft: '-0.125rem'}} href="https://once-ui.com/templates/magic-portfolio">Once UI</SmartLink>
+                        / <SmartLink style={{marginLeft: '-0.125rem'}} href="https://pump.fun/coin/FdFUGJSzJXDCZemQbkBwYs3tZEvixyEc8cZfRqJrpump">$BEARCO</SmartLink>
                     </Text>
                 </Text>
                 <Flex

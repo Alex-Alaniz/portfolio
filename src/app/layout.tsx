@@ -1,5 +1,6 @@
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
+import "@/app/globals.scss";
 
 import classNames from 'classnames';
 
@@ -7,8 +8,12 @@ import { Flex, Background } from '@/once-ui/components'
 import { Footer, Header, RouteGuard } from "@/app/components";
 import { baseURL, effects, home, person, style } from '@/app/resources'
 
-import { Inter } from 'next/font/google'
-import { Source_Code_Pro } from 'next/font/google';
+// DISTINCTIVE FONTS - No generic Inter/Roboto
+// Syne: Geometric, bold, futuristic display font
+// JetBrains Mono: Technical, code-focused monospace
+import { Syne } from 'next/font/google'
+import { JetBrains_Mono } from 'next/font/google';
+import { DM_Sans } from 'next/font/google';
 
 import { Metadata } from "next";
 
@@ -17,10 +22,10 @@ export const metadata: Metadata = {
 	title: home.title,
 	description: home.description,
 	openGraph: {
-		title: `${person.firstName}'s Portfolio`,
-		description: 'Ale𝕏, Software Engineer | Personal Ale𝕏, Software Engineer | Personal Portfolio website showcasing my work..',
+		title: `${person.firstName} | BearifiedCo`,
+		description: 'Founder of BearifiedCo - Building the future of tokenized software development on Solana.',
 		url: baseURL,
-		siteName: `${person.firstName}'s Portfolio`,
+		siteName: `${person.firstName} | BearifiedCo`,
 		locale: 'en_US',
 		type: 'website',
 		images: "avatar.jpg",
@@ -38,26 +43,30 @@ export const metadata: Metadata = {
 	},
 }
 
-const primary = Inter({
+// Primary: Syne - Bold, geometric, futuristic headlines
+const primary = Syne({
 	variable: '--font-primary',
 	subsets: ['latin'],
 	display: 'swap',
+	weight: ['400', '500', '600', '700', '800'],
+})
+
+// Secondary: DM Sans - Clean, modern body text
+const secondary = DM_Sans({
+	variable: '--font-secondary',
+	subsets: ['latin'],
+	display: 'swap',
+	weight: ['400', '500', '700'],
 })
 
 type FontConfig = {
     variable: string;
 };
 
-/*
-	Replace with code for secondary and tertiary fonts
-	from https://once-ui.com/customize
-*/
-const secondary: FontConfig | undefined = undefined;
 const tertiary: FontConfig | undefined = undefined;
-/*
-*/
 
-const code = Source_Code_Pro({
+// Code: JetBrains Mono - The developer's choice
+const code = JetBrains_Mono({
 	variable: '--font-code',
 	subsets: ['latin'],
 	display: 'swap',
@@ -80,7 +89,7 @@ export default function RootLayout({ children } : RootLayoutProps) {
 			data-transition={style.transition}
 			className={classNames(
 				primary.variable,
-				secondary ? secondary.variable : '',
+				secondary.variable,
 				tertiary ? tertiary.variable : '',
 				code.variable)}>
 			<Flex style={{minHeight: '100vh'}}

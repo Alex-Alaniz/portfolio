@@ -1,6 +1,5 @@
 const baseURL = 'https://www.alexalaniz.com/'
 
-
 const routes = {
     '/':        true,
     '/about':   true,
@@ -9,33 +8,40 @@ const routes = {
     '/gallery': true,
 }
 
-// Enable password protection on selected routes
-// Set password in pages/api/authenticate.ts
-const protectedRoutes = {
-    '/work/automate-design-handovers-with-a-figma-to-code-pipeline': true
-}
+// No protected routes needed
+const protectedRoutes = {}
 
+// Bold visual effects - cyberpunk meets finance
 const effects = {
     gradient: true,
-    dots:     true,
-    lines:    false,
+    dots:     false,
+    lines:    true,
 }
 
+// AESTHETIC: Cyberpunk finance meets NYC nights
+// Orange (BEARCO brand) + Electric accents + Dark mode
 const style = {
-    theme:       'dark',         // dark | light
-    neutral:     'gray',         // sand | gray | slate
-    brand:       'aqua',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    accent:      'yellow',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    solid:       'contrast',     // color | contrast
-    solidStyle:  'flat',         // flat | plastic
-    border:      'playful',      // rounded | playful | conservative
-    surface:     'translucent',  // filled | translucent
-    transition:  'all'           // all | micro | macro
+    theme:       'dark',         // Dark mode always - we build at night
+    neutral:     'slate',        // Slate for that NYC concrete vibe
+    brand:       'orange',       // BEARCO orange - our primary brand
+    accent:      'emerald',      // Solana green for that Web3 energy
+    solid:       'contrast',     // High contrast for readability
+    solidStyle:  'plastic',      // Glossy, modern feel
+    border:      'playful',      // Rounded but dynamic
+    surface:     'translucent',  // Glass morphism vibes
+    transition:  'all'           // Smooth everything
 }
 
 const display = {
     location: true,
     time:     true
+}
+
+// BEARCO token details
+const bearco = {
+    tokenAddress: 'FdFUGJSzJXDCZemQbkBwYs3tZEvixyEc8cZfRqJrpump',
+    pumpFunUrl: 'https://pump.fun/coin/FdFUGJSzJXDCZemQbkBwYs3tZEvixyEc8cZfRqJrpump',
+    livestreamEmbed: 'https://pump.fun/coin/FdFUGJSzJXDCZemQbkBwYs3tZEvixyEc8cZfRqJrpump',
 }
 
 const mailchimp = {
@@ -47,4 +53,4 @@ const mailchimp = {
     }
 }
 
-export { routes, protectedRoutes, effects, style, display, mailchimp, baseURL };
+export { routes, protectedRoutes, effects, style, display, mailchimp, baseURL, bearco };

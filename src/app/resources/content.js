@@ -1,30 +1,28 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Ale𝕏 ',
+    firstName: 'Ale𝕏',
     lastName:  'Alaniz',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Software Engineer',
+    role:      'Software Engineer & Founder',
     avatar:    '/images/avatar.jpg',
-    location:  'America🇺🇸 | New York🗽',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Spanish']  // optional: Leave the array empty if you don't want to display languages
+    location:  'New York 🗽',
+    languages: ['English', 'Spanish']
 }
 
 const newsletter = {
     display: true,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+    title: <>Join the $BEARCO Movement</>,
+    description: <>Get updates on BearifiedCo ventures, tokenization milestones, and the future of community-driven software development.</>
 }
 
 const social = [
-    // Links are automatically displayed.
-    // Import new icons in /once-ui/icons.ts
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/Alex-Alaniz/portfolio',
+        link: 'https://github.com/Alex-Alaniz',
     },
     {
         name: 'LinkedIn',
@@ -37,6 +35,11 @@ const social = [
         link: 'https://x.com/AlexDotEth',
     },
     {
+        name: '$BEARCO',
+        icon: 'solana',
+        link: 'https://pump.fun/coin/FdFUGJSzJXDCZemQbkBwYs3tZEvixyEc8cZfRqJrpump',
+    },
+    {
         name: 'Email',
         icon: 'email',
         link: 'mailto:alex@bearified.xyz',
@@ -45,16 +48,16 @@ const social = [
 
 const home = {
     label: 'Home',
-    title: `${person.name}'s Portfolio`,
-    description: `Ale𝕏 ${person.role} | Personal Portfolio website showcasing my work.`,
-    headline: <>Software Engineer and Builder</>,
-    subline: <>Ale𝕏 | {person.role} & Founder at <InlineCode>BearifiedCo</InlineCode> where we craft intuitive<br/> user experiments & experiences. After hours, I build my own projects.</>
+    title: `${person.name} | BearifiedCo`,
+    description: `Founder of BearifiedCo - Building the future of tokenized software development.`,
+    headline: <>Building the Future of<br/>Tokenized Software</>,
+    subline: <>Founder at <InlineCode>BearifiedCo</InlineCode> — a software development agency tokenized on Solana via $BEARCO. Building AI-powered tools, Web3 payments, and community-driven products. Watch the 24/7 livestream on pump.fun.</>
 }
 
 const about = {
     label: 'About',
-    title: 'About me',
-    description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+    title: 'About Ale𝕏',
+    description: `Meet ${person.name}, ${person.role} — building tokenized software companies from NYC`,
     tableOfContent: {
         display: true,
         subItems: true
@@ -68,89 +71,106 @@ const about = {
     },
     intro: {
         display: true,
-        title: 'Introduction',
-        description: <>Ale𝕏 | NYC🗽 based software engineer with a passion for transforming complex challenges into simple, elegant engineering solutions. My work spans digital interfaces, interactive experiences, and the convergence of engineering and technology.</>
+        title: 'The Vision',
+        description: <>NYC-based software engineer and founder of BearifiedCo — a tokenized software development agency on Solana. I believe the future of software companies is community-owned, transparently built, and financially accessible to everyone who contributes. That's why I tokenized my agency via $BEARCO on pump.fun with a 24/7 livestream showing every line of code being written.</>
     },
     work: {
-        display: true, // set to false to hide this section
-        title: 'Work Experience',
+        display: true,
+        title: 'Ventures & Products',
         experiences: [
             {
                 company: 'BearifiedCo',
                 timeframe: '2023 - Present',
-                role: 'Founder & Software Engineer',
+                role: 'Founder & Lead Engineer',
                 achievements: [
-                    <>As the founder of BearifiedCo, I am dedicated to empowering developers, artists, and creators in the MemeCoin & NFT space through innovative smart contract development and robust Tokenomics & NFT solutions offered by BearifiedLabs. Our mission is to leverage blockchain technology to create transformative and secure experiences that enhance engagement and utility.</>,
-                    <>BearifiedCo explores the intersection of fashion and digital assets, while BearifiedIP supports creators in navigating the complexities of intellectual property in a decentralized landscape.</>
+                    <>Tokenized the entire software agency on Solana via $BEARCO on pump.fun — the first software development company built entirely in public with a 24/7 coding livestream.</>,
+                    <>Building Bearified Artifacts: an AI-powered generation platform using Google Gemini with BEARCO token payments, vote-to-earn mechanics, and community-driven idea submissions.</>,
+                    <>Developing StablePay: a Venmo-style peer-to-peer crypto payment app supporting USDC/USDT across Ethereum, Polygon, and Base chains with thirdweb integration.</>,
+                    <>BEARCO Gaming Platform: a Solana-based gaming ecosystem with Phantom wallet integration, real-time WebSocket connections, and secure transaction handling.</>
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
+                images: [
                     {
                         src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        alt: 'Bearified Artifacts Platform',
                         width: 16,
                         height: 9
                     }
                 ]
             },
             {
-                company: 'E𝕏',
+                company: 'BearifiedLabs',
+                timeframe: '2023 - Present',
+                role: 'Smart Contract Development',
+                achievements: [
+                    <>Empowering developers, artists, and creators in the MemeCoin & NFT space through innovative smart contract development and tokenomics consulting.</>,
+                    <>Building robust NFT solutions with focus on security, gas optimization, and community utility features.</>
+                ],
+                images: []
+            },
+            {
+                company: 'Previous Experience',
                 timeframe: '2012 - 2022',
                 role: 'Information Technology',
                 achievements: [
-                    <>Maglaw</>,
-                    <>Lyft</>,
-                    <>Apple </>
+                    <>10+ years of IT experience across multiple industries including legal tech (Maglaw), ride-sharing (Lyft), and consumer electronics (Apple).</>,
+                    <>Built enterprise systems, managed infrastructure, and developed internal tools that scaled to millions of users.</>
                 ],
-                images: [ ]
+                images: []
             }
         ]
     },
     studies: {
-        display: true, // set to false to hide this section
-        title: 'Studies',
+        display: true,
+        title: 'Philosophy',
         institutions: [
             {
-                name: 'University of Life',
-                description: <>Studied software engineering.</>,
+                name: 'Building in Public',
+                description: <>Every line of code streamed live. Full transparency. Community ownership through tokenization.</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Continuous Learning',
+                description: <>Self-taught software engineer. AI-accelerated development. Learning by shipping real products.</>,
             }
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
-        title: 'Technical skills',
+        display: true,
+        title: 'Tech Stack',
         skills: [
             {
-                title: 'AI Prototyping',
-                description: <>Able to prototype with AI at an accelerated pace.</>,
+                title: 'AI-Accelerated Development',
+                description: <>Building with Claude, GPT-4, and Gemini to ship products at unprecedented speed. Created an autonomous agentic coding workflow using Claude Opus for continuous development.</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
+                        alt: 'Agentic Workflow',
                         width: 16,
                         height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
+                    }
                 ]
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                title: 'Full-Stack Web3',
+                description: <>Next.js, React, SolidJS for frontends. Solana, Ethereum, Base for blockchain. thirdweb, Phantom for wallet integration. Supabase for backend.</>,
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-03.jpg',
+                        alt: 'Web3 Stack',
+                        width: 16,
+                        height: 9
+                    }
+                ]
+            },
+            {
+                title: 'Payment Systems',
+                description: <>Built crypto payment rails for BEARCO token, stablecoins (USDC/USDT), and multi-chain support across Ethereum, Polygon, and Base.</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
+                        alt: 'Payment Systems',
                         width: 16,
                         height: 9
-                    },
+                    }
                 ]
             }
         ]
@@ -159,94 +179,89 @@ const about = {
 
 const blog = {
     label: 'Blog',
-    title: 'Writing about design and tech...',
-    description: `Read what ${person.name} has been up to recently`
-    // Create new blog posts by adding a new .mdx file to app/blog/posts
-    // All posts will be listed on the /blog route
+    title: 'Building in Public',
+    description: `Thoughts on tokenization, AI development, and building the future of software`
 }
 
 const work = {
     label: 'Work',
-    title: 'My projects',
-    description: `Design and dev projects by ${person.name}`
-    // Create new project pages by adding a new .mdx file to app/blog/posts
-    // All projects will be listed on the /home and /work routes
+    title: 'Products & Ventures',
+    description: `Shipping real products in the Web3 ecosystem`
 }
 
 const gallery = {
     label: 'Gallery',
-    title: 'My photo gallery',
-    description: `A photo collection by ${person.name}`,
-    // Images from https://pexels.com
+    title: 'Build Log',
+    description: `Screenshots, designs, and moments from building BearifiedCo`,
     images: [
-        { 
-            src: '/images/gallery/img-01.jpg', 
-            alt: 'image',
+        {
+            src: '/images/gallery/img-01.jpg',
+            alt: 'Building BearifiedCo',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-02.jpg', 
-            alt: 'image',
+        {
+            src: '/images/gallery/img-02.jpg',
+            alt: 'Development setup',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-03.jpg', 
-            alt: 'image',
+        {
+            src: '/images/gallery/img-03.jpg',
+            alt: 'Code review',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-04.jpg', 
-            alt: 'image',
+        {
+            src: '/images/gallery/img-04.jpg',
+            alt: 'Product launch',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-05.jpg', 
-            alt: 'image',
+        {
+            src: '/images/gallery/img-05.jpg',
+            alt: 'Team meeting',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-06.jpg', 
-            alt: 'image',
+        {
+            src: '/images/gallery/img-06.jpg',
+            alt: 'Late night coding',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-07.jpg', 
-            alt: 'image',
+        {
+            src: '/images/gallery/img-07.jpg',
+            alt: 'NYC office',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-08.jpg', 
-            alt: 'image',
+        {
+            src: '/images/gallery/img-08.jpg',
+            alt: 'Design process',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-09.jpg', 
-            alt: 'image',
+        {
+            src: '/images/gallery/img-09.jpg',
+            alt: 'Token launch',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-10.jpg', 
-            alt: 'image',
+        {
+            src: '/images/gallery/img-10.jpg',
+            alt: 'Community event',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-11.jpg', 
-            alt: 'image',
+        {
+            src: '/images/gallery/img-11.jpg',
+            alt: 'Whiteboard session',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-12.jpg', 
-            alt: 'image',
+        {
+            src: '/images/gallery/img-12.jpg',
+            alt: 'Product demo',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-13.jpg', 
-            alt: 'image',
+        {
+            src: '/images/gallery/img-13.jpg',
+            alt: 'Streaming setup',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-14.jpg', 
-            alt: 'image',
+        {
+            src: '/images/gallery/img-14.jpg',
+            alt: 'Celebrating milestone',
             orientation: 'horizontal'
         },
     ]

@@ -1,0 +1,58 @@
+---
+title: "StablePay - Peer-to-Peer Crypto Payments"
+publishedAt: "2024-11-01"
+summary: "A Venmo-style peer-to-peer cryptocurrency payment app supporting USDC/USDT across Ethereum, Polygon, and Base chains."
+images:
+  - "/images/projects/project-01/cover-03.jpg"
+  - "/images/projects/project-01/cover-04.jpg"
+team:
+  - name: "Ale𝕏 Alaniz"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/alex-alaniz-4981578a/"
+---
+
+## Overview
+
+StablePay brings the simplicity of Venmo to crypto payments. Send stablecoins to anyone using just their username — no wallet addresses to copy, no chain confusion, just simple peer-to-peer payments.
+
+## Key Features
+
+- **Username-Based Payments**: Send USDC/USDT to users by @username, not wallet addresses
+- **Multi-Chain Support**: Ethereum, Polygon, and Base with Base as default for lowest fees
+- **Email Authentication**: thirdweb user wallets with email verification — no seed phrases needed
+- **Smart Balance Filtering**: View balances by chain and token with persistent user preferences
+- **Real-Time Tracking**: Transaction status monitoring with blockchain confirmation updates
+- **Mobile-First Design**: Venmo-inspired UI optimized for mobile devices
+
+## Technical Stack
+
+- **Frontend**: React 18 + TypeScript + Vite
+- **Styling**: Tailwind CSS with custom Venmo-inspired design system
+- **Database**: Supabase (PostgreSQL) with Row Level Security
+- **Blockchain**: thirdweb API v1 for all Web3 operations
+- **Authentication**: thirdweb email verification + JWT token management
+
+## Payment Flow
+
+1. **User Search**: Look up recipient by username in Supabase
+2. **Payment Creation**: Call thirdweb `/v1/payments` endpoint
+3. **Payment Execution**: Complete via `/v1/payments/{id}` endpoint
+4. **Transaction Recording**: Store details in Supabase
+5. **Real-time Updates**: Status updates via Supabase subscriptions
+
+## Supported Networks
+
+| Network | Token | Gas Currency |
+|---------|-------|--------------|
+| Base (Default) | USDC | ETH |
+| Ethereum | USDC | ETH |
+| Polygon | USDC | MATIC |
+
+## Challenges & Solutions
+
+The biggest challenge was preventing infinite re-render loops in React when dealing with real-time balance updates. We solved this through careful use of `useCallback` and `useMemo` hooks with proper dependency arrays, ensuring the UI remains responsive without unnecessary re-renders.
+
+## Outcome
+
+StablePay demonstrates how crypto payments can be as simple as traditional peer-to-peer apps. The username-based system removes the friction of wallet addresses while multi-chain support gives users flexibility in how they transact.
