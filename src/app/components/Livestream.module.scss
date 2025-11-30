@@ -192,6 +192,72 @@
     letter-spacing: 0.5px;
 }
 
+// Stream stats overlay
+.statsOverlay {
+    position: absolute;
+    top: var(--static-space-16);
+    left: var(--static-space-16);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.statsContent {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-family: var(--font-code);
+    font-size: 12px;
+    color: white;
+    min-width: 160px;
+}
+
+.statRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 2px 0;
+
+    span:first-child {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    span:last-child {
+        color: var(--accent-solid-strong);
+        font-weight: 600;
+    }
+}
+
+// Keyboard shortcuts hint
+.shortcutsHint {
+    position: absolute;
+    top: var(--static-space-16);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 8;
+    display: flex;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    animation-delay: 0.5s;
+
+    span {
+        white-space: nowrap;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
 // Custom controls bar
 .controlsBar {
     position: absolute;
@@ -231,6 +297,92 @@
 
     &:active {
         transform: scale(0.95);
+    }
+}
+
+.controlBtnActive {
+    background: var(--brand-solid-strong);
+
+    &:hover {
+        background: var(--brand-solid-strong);
+    }
+}
+
+// Volume control
+.volumeControl {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.volumeSliderWrapper {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.2s ease;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.volumeSliderVisible {
+    width: 80px;
+    margin-left: 8px;
+}
+
+.volumeSlider {
+    width: 100%;
+    height: 4px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    cursor: pointer;
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 14px;
+        height: 14px;
+        background: white;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform 0.1s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &::-moz-range-thumb {
+        width: 14px;
+        height: 14px;
+        background: white;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        transition: transform 0.1s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &::-webkit-slider-runnable-track {
+        height: 4px;
+        background: linear-gradient(to right, var(--brand-solid-strong) 0%, var(--brand-solid-strong) var(--value, 80%), rgba(255, 255, 255, 0.3) var(--value, 80%), rgba(255, 255, 255, 0.3) 100%);
+        border-radius: 2px;
+    }
+
+    &::-moz-range-track {
+        height: 4px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 2px;
+    }
+
+    &::-moz-range-progress {
+        background: var(--brand-solid-strong);
+        height: 4px;
+        border-radius: 2px;
     }
 }
 
@@ -410,5 +562,19 @@
     .hdBadge {
         padding: 3px 8px;
         font-size: 10px;
+    }
+
+    .shortcutsHint {
+        display: none;
+    }
+
+    .volumeSliderVisible {
+        width: 60px;
+    }
+
+    .statsContent {
+        font-size: 10px;
+        padding: 8px 12px;
+        min-width: 140px;
     }
 }
