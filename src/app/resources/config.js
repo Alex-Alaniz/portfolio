@@ -18,11 +18,11 @@ const effects = {
     lines:    true,
 }
 
-// AESTHETIC: Cyberpunk finance meets NYC nights
+// AESTHETIC: AI-native builder meets Web3 energy
 // Orange (BEARCO brand) + Electric accents + Dark mode
 const style = {
     theme:       'dark',         // Dark mode always - we build at night
-    neutral:     'slate',        // Slate for that NYC concrete vibe
+    neutral:     'slate',        // Slate for that clean dark aesthetic
     brand:       'orange',       // BEARCO orange - our primary brand
     accent:      'emerald',      // Solana green for that Web3 energy
     solid:       'contrast',     // High contrast for readability

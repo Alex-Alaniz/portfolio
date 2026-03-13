@@ -6,16 +6,16 @@ const person = {
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Software Engineer & Founder',
+    role:      'Founder & CEO of BearifiedCo',
     avatar:    '/images/avatar.jpg',
-    location:  'New York 🗽',
+    location:  'America/New_York',
     languages: ['English', 'Spanish']
 }
 
 const newsletter = {
     display: true,
     title: <>Join the $BEARCO Movement</>,
-    description: <>Get updates on BearifiedCo ventures, tokenization milestones, and the future of community-driven software development.</>
+    description: <>Get updates on BearifiedCo products, the 39-agent AI org, agentic payments, and the future of community-driven software.</>
 }
 
 const social = [
@@ -42,22 +42,22 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:alex@bearified.xyz',
+        link: 'mailto:alex@bearified.co',
     },
 ]
 
 const home = {
     label: 'Home',
     title: `${person.name} | BearifiedCo`,
-    description: `Founder of BearifiedCo - Building the future of tokenized software development.`,
-    headline: <>Building the Future of<br/>Tokenized Software</>,
-    subline: <>Founder at <InlineCode>BearifiedCo</InlineCode> — a software development agency tokenized on Solana via $BEARCO. Building AI-powered tools, Web3 payments, and community-driven products. Watch the 24/7 livestream on pump.fun.</>
+    description: `Founder of BearifiedCo — Building agentic payments and running a 39-agent AI organization.`,
+    headline: <>Agentic Payments &<br/>a 39-Agent AI Org</>,
+    subline: <>Founder at <InlineCode>BearifiedCo</InlineCode> — running a 39-agent AI organization on a single Mac mini M4 Pro. Building agentic payments, tokenized software, and 5 live products across AI, mobile, and Web3. Tokenized on Solana via $BEARCO with a 24/7 livestream on pump.fun.</>
 }
 
 const about = {
     label: 'About',
     title: 'About Ale𝕏',
-    description: `Meet ${person.name}, ${person.role} — building tokenized software companies from NYC`,
+    description: `Meet ${person.name}, ${person.role} — building agentic payments and running a 39-agent AI org`,
     tableOfContent: {
         display: true,
         subItems: true
@@ -72,47 +72,88 @@ const about = {
     intro: {
         display: true,
         title: 'The Vision',
-        description: <>NYC-based software engineer and founder of BearifiedCo — a tokenized software development agency on Solana. I believe the future of software companies is community-owned, transparently built, and financially accessible to everyone who contributes. That's why I tokenized my agency via $BEARCO on pump.fun with a 24/7 livestream showing every line of code being written.</>
+        description: <>Founder and CEO of BearifiedCo — a tokenized software company running a 39-agent autonomous AI organization on a single Mac mini M4 Pro. Zero human employees, shipping daily. I believe the future belongs to AI-native companies where autonomous agents build, sell, and grow products around the clock. The company is tokenized on Solana via $BEARCO on pump.fun with a 24/7 livestream showing every line of code being written.</>
     },
     work: {
         display: true,
         title: 'Ventures & Products',
         experiences: [
             {
-                company: 'BearifiedCo',
-                timeframe: '2023 - Present',
-                role: 'Founder & Lead Engineer',
+                company: 'BearifiedCo — AI Organization',
+                timeframe: '2024 - Present',
+                role: 'CEO — 39-Agent AI Org',
                 achievements: [
-                    <>Tokenized the entire software agency on Solana via $BEARCO on pump.fun — the first software development company built entirely in public with a 24/7 coding livestream.</>,
-                    <>Building Bearified Artifacts: an AI-powered generation platform using Google Gemini with BEARCO token payments, vote-to-earn mechanics, and community-driven idea submissions.</>,
-                    <>Developing StablePay: a Venmo-style peer-to-peer crypto payment app supporting USDC/USDT across Ethereum, Polygon, and Base chains with thirdweb integration.</>,
-                    <>BEARCO Gaming Platform: a Solana-based gaming ecosystem with Phantom wallet integration, real-time WebSocket connections, and secure transaction handling.</>
+                    <>Built and run a 39-agent autonomous AI organization: 15 OpenClaw agents (engineering, sales, marketing, community) + 24 Notion AI agents (admin, ops, HR, finance) on a single Mac mini M4 Pro.</>,
+                    <>AI CTO (Claude Opus) manages the full engineering org: Head of Engineering, 5 Lead Engineers, Chief of Staff, CGO, Sales Lead, Marketing Lead, and Community Bot — all operating 24/7.</>,
+                    <>Built on OpenClaw, the open-source AI assistant platform. Contributed upstream PRs and run a custom instance powering the entire agent org with Mission Control dashboard.</>,
+                    <>Tokenized the company on Solana via $BEARCO on pump.fun with a 24/7 coding livestream — the first AI-native software company built entirely in public.</>
                 ],
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Bearified Artifacts Platform',
+                        src: '/images/org-chart.png',
+                        alt: 'Bearified AI Organization Chart — 39 Agents',
                         width: 16,
-                        height: 9
+                        height: 8
                     }
                 ]
             },
             {
+                company: 'Bearo',
+                timeframe: '2024 - Present',
+                role: 'Agentic P2P Payments',
+                achievements: [
+                    <>Agentic peer-to-peer payments — making it as easy as Venmo for both humans and AI agents to transact autonomously.</>,
+                    <>Native iOS app built with React Native, Expo, thirdweb, and Supabase. Multi-chain support across Solana and EVM chains.</>,
+                    <>Username-based payments, email auth, real-time transaction tracking, and smart balance filtering across multiple chains and tokens.</>
+                ],
+                images: []
+            },
+            {
+                company: 'OpenClaws',
+                timeframe: '2024 - Present',
+                role: '24/7 AI Assistant SaaS',
+                achievements: [
+                    <>OpenClaws.biz — a $29/mo 24/7 AI assistant service powered by OpenClaw with multi-channel support (Telegram, Discord, Slack, WhatsApp, iMessage).</>,
+                    <>Autonomous customer support, sales outreach, and task execution running on the same infrastructure as the internal agent org.</>
+                ],
+                images: []
+            },
+            {
+                company: 'BearCrawl',
+                timeframe: '2024 - Present',
+                role: 'AI Agent Platform',
+                achievements: [
+                    <>BearCrawl.ai — an AI agent platform with 5 tiers (Cub to Polar Bear) offering BYOAuth agent deployment for businesses.</>,
+                    <>Built with Next.js. Designed for organizations to deploy and manage their own autonomous AI agents at scale.</>
+                ],
+                images: []
+            },
+            {
+                company: 'Chimpanion & Storefront',
+                timeframe: '2025 - Present',
+                role: 'Mobile Products',
+                achievements: [
+                    <>Chimpanion — AI companion app live on the App Store. Native Swift iOS providing market analysis and trading insights.</>,
+                    <>Storefront — B2B/B2C mobile commerce platform. Native SwiftUI apps with Swift Package architecture for business and consumer use cases.</>
+                ],
+                images: []
+            },
+            {
                 company: 'BearifiedLabs',
-                timeframe: '2023 - Present',
+                timeframe: '2023 - 2024',
                 role: 'Smart Contract Development',
                 achievements: [
-                    <>Empowering developers, artists, and creators in the MemeCoin & NFT space through innovative smart contract development and tokenomics consulting.</>,
-                    <>Building robust NFT solutions with focus on security, gas optimization, and community utility features.</>
+                    <>Smart contract development and tokenomics consulting for developers, artists, and creators in the MemeCoin and NFT space.</>,
+                    <>Built robust NFT solutions with focus on security, gas optimization, and community utility features.</>
                 ],
                 images: []
             },
             {
                 company: 'Previous Experience',
-                timeframe: '2012 - 2022',
+                timeframe: '2012 - 2023',
                 role: 'Information Technology',
                 achievements: [
-                    <>10+ years of IT experience across multiple industries including legal tech (Maglaw), ride-sharing (Lyft), and consumer electronics (Apple).</>,
+                    <>10+ years of IT experience across legal tech (Maglaw), ride-sharing (Lyft), and consumer electronics (Apple).</>,
                     <>Built enterprise systems, managed infrastructure, and developed internal tools that scaled to millions of users.</>
                 ],
                 images: []
@@ -124,12 +165,12 @@ const about = {
         title: 'Philosophy',
         institutions: [
             {
-                name: 'Building in Public',
-                description: <>Every line of code streamed live. Full transparency. Community ownership through tokenization.</>,
+                name: 'AI-Native Organization',
+                description: <>39 autonomous agents. Zero human employees. The future of companies is AI-native: agents that build, sell, and grow products 24/7 on a single machine.</>,
             },
             {
-                name: 'Continuous Learning',
-                description: <>Self-taught software engineer. AI-accelerated development. Learning by shipping real products.</>,
+                name: 'Building in Public',
+                description: <>Every line of code streamed live. Full transparency. Community ownership through tokenization. Self-taught engineer turned CEO of an AI org.</>,
             }
         ]
     },
@@ -138,36 +179,36 @@ const about = {
         title: 'Tech Stack',
         skills: [
             {
-                title: 'AI-Accelerated Development',
-                description: <>Building with Claude, GPT-4, and Gemini to ship products at unprecedented speed. Created an autonomous agentic coding workflow using Claude Opus for continuous development.</>,
+                title: 'AI Agent Infrastructure',
+                description: <>Running 39 autonomous agents on OpenClaw (open-source AI assistant platform). Claude Opus as CTO, Sonnet for leads, Haiku for support. Custom orchestration with launchd, tmux, heartbeat scripts, and Mission Control dashboard.</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Agentic Workflow',
+                        alt: 'AI Agent Infrastructure',
                         width: 16,
                         height: 9
                     }
                 ]
             },
             {
-                title: 'Full-Stack Web3',
-                description: <>Next.js, React, SolidJS for frontends. Solana, Ethereum, Base for blockchain. thirdweb, Phantom for wallet integration. Supabase for backend.</>,
+                title: 'Agentic Payments & Web3',
+                description: <>Building payment infrastructure for AI agents. Solana, thirdweb, multi-chain support. $BEARCO token on pump.fun. P2P payments via Bearo with stablecoin support across EVM chains.</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Web3 Stack',
+                        alt: 'Agentic Payments',
                         width: 16,
                         height: 9
                     }
                 ]
             },
             {
-                title: 'Payment Systems',
-                description: <>Built crypto payment rails for BEARCO token, stablecoins (USDC/USDT), and multi-chain support across Ethereum, Polygon, and Base.</>,
+                title: 'Full-Stack & Mobile',
+                description: <>TypeScript, React, Next.js, SolidJS for web. Swift and SwiftUI for native iOS. React Native and Expo for cross-platform. Supabase, Docker, Vercel for infrastructure.</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Payment Systems',
+                        alt: 'Full Stack & Mobile',
                         width: 16,
                         height: 9
                     }
@@ -180,13 +221,13 @@ const about = {
 const blog = {
     label: 'Blog',
     title: 'Building in Public',
-    description: `Thoughts on tokenization, AI development, and building the future of software`
+    description: `Thoughts on AI organizations, agentic payments, tokenization, and building the future of software`
 }
 
 const work = {
     label: 'Work',
     title: 'Products & Ventures',
-    description: `Shipping real products in the Web3 ecosystem`
+    description: `5 live products built by a 39-agent AI organization`
 }
 
 const gallery = {
@@ -194,76 +235,20 @@ const gallery = {
     title: 'Build Log',
     description: `Screenshots, designs, and moments from building BearifiedCo`,
     images: [
-        {
-            src: '/images/gallery/img-01.jpg',
-            alt: 'Building BearifiedCo',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-02.jpg',
-            alt: 'Development setup',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-03.jpg',
-            alt: 'Code review',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-04.jpg',
-            alt: 'Product launch',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-05.jpg',
-            alt: 'Team meeting',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-06.jpg',
-            alt: 'Late night coding',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-07.jpg',
-            alt: 'NYC office',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-08.jpg',
-            alt: 'Design process',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-09.jpg',
-            alt: 'Token launch',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-10.jpg',
-            alt: 'Community event',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-11.jpg',
-            alt: 'Whiteboard session',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-12.jpg',
-            alt: 'Product demo',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-13.jpg',
-            alt: 'Streaming setup',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-14.jpg',
-            alt: 'Celebrating milestone',
-            orientation: 'horizontal'
-        },
+        { src: '/images/gallery/img-01.jpg', alt: 'Building BearifiedCo', orientation: 'vertical' },
+        { src: '/images/gallery/img-02.jpg', alt: 'Development setup', orientation: 'horizontal' },
+        { src: '/images/gallery/img-03.jpg', alt: 'Code review', orientation: 'vertical' },
+        { src: '/images/gallery/img-04.jpg', alt: 'Product launch', orientation: 'horizontal' },
+        { src: '/images/gallery/img-05.jpg', alt: 'Team meeting', orientation: 'horizontal' },
+        { src: '/images/gallery/img-06.jpg', alt: 'Late night coding', orientation: 'vertical' },
+        { src: '/images/gallery/img-07.jpg', alt: 'Mac mini M4 Pro setup', orientation: 'horizontal' },
+        { src: '/images/gallery/img-08.jpg', alt: 'Design process', orientation: 'vertical' },
+        { src: '/images/gallery/img-09.jpg', alt: 'Token launch', orientation: 'horizontal' },
+        { src: '/images/gallery/img-10.jpg', alt: 'Community event', orientation: 'horizontal' },
+        { src: '/images/gallery/img-11.jpg', alt: 'Whiteboard session', orientation: 'vertical' },
+        { src: '/images/gallery/img-12.jpg', alt: 'Product demo', orientation: 'horizontal' },
+        { src: '/images/gallery/img-13.jpg', alt: 'Streaming setup', orientation: 'horizontal' },
+        { src: '/images/gallery/img-14.jpg', alt: 'Celebrating milestone', orientation: 'horizontal' },
     ]
 }
 
