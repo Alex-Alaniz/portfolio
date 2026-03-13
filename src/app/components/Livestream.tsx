@@ -395,7 +395,7 @@ export const Livestream = () => {
                 progressive: true,
 
                 // Faster level switching
-                nextLoadLevel: -1,
+                startLevel: -1,
             });
 
             hls.loadSource(playbackUrl);
