@@ -1,68 +1,49 @@
 ---
 title: "Bearo"
 publishedAt: "2025-11-20"
-summary: "A Venmo-style peer-to-peer cryptocurrency payment app supporting USDC/USDT across Ethereum, Polygon, and Base chains. Currently in development."
+summary: "Agentic peer-to-peer payments — making it as easy as Venmo for both humans and AI agents to transact autonomously across Solana and EVM chains."
 images:
   - "/images/projects/project-01/cover-03.jpg"
   - "/images/projects/project-01/cover-06.jpg"
 team:
   - name: "Ale𝕏 Alaniz"
-    role: "Software Engineer"
+    role: "Founder & CEO"
     avatar: "/images/avatar.jpg"
     linkedIn: "https://www.linkedin.com/in/alex-alaniz-4981578a/"
 ---
 
 ## Overview
 
-Bearo brings the simplicity of Venmo to crypto payments. Send stablecoins to anyone using just their username — no wallet addresses to copy, no chain confusion, just simple peer-to-peer payments.
+Bearo is agentic peer-to-peer payments — making it as easy as Venmo for both humans and AI agents to transact autonomously. Send stablecoins to anyone using just their username, no wallet addresses needed, no chain confusion.
 
-**Status: Currently in Development** — Follow the progress on our [24/7 livestream](https://pump.fun/coin/FdFUGJSzJXDCZemQbkBwYs3tZEvixyEc8cZfRqJrpump).
+Built for a world where AI agents need to pay for services, split costs, and move money just like humans do.
+
+**Status: In Development** — Follow progress on the [24/7 livestream](https://pump.fun/coin/FdFUGJSzJXDCZemQbkBwYs3tZEvixyEc8cZfRqJrpump).
 
 ## Key Features
 
-- **Username-Based Payments**: Send USDC/USDT to users by @username, not wallet addresses
-- **Multi-Chain Support**: Ethereum, Polygon, and Base with Base as default for lowest fees
-- **Email Authentication**: thirdweb user wallets with email verification — no seed phrases needed
-- **Smart Balance Filtering**: View balances by chain and token with persistent user preferences
-- **Real-Time Tracking**: Transaction status monitoring with blockchain confirmation updates
-- **Mobile-First Design**: Venmo-inspired UI optimized for mobile devices
+- **Username-Based Payments**: Send USDC/USDT by @username, not wallet addresses
+- **Multi-Chain Support**: Solana and EVM chains (Base, Polygon, Ethereum)
+- **Agentic Transactions**: API-first design so AI agents can send/receive payments programmatically
+- **Email Authentication**: thirdweb user wallets with email verification — no seed phrases
+- **Smart Balance Filtering**: View balances by chain and token with persistent preferences
+- **Real-Time Tracking**: Transaction status monitoring with blockchain confirmations
+- **Mobile-First**: Native iOS app built with React Native + Expo
 
 ## Technical Stack
 
-- **Frontend**: React 18 + TypeScript + Vite
-- **Styling**: Tailwind CSS with custom Venmo-inspired design system
+- **Mobile**: React Native, Expo
+- **Web3**: thirdweb (wallets, payments, multi-chain)
 - **Database**: Supabase (PostgreSQL) with Row Level Security
-- **Blockchain**: thirdweb API v1 for all Web3 operations
-- **Authentication**: thirdweb email verification + JWT token management
+- **Authentication**: thirdweb email verification + JWT
+- **Chains**: Solana, Base, Polygon, Ethereum
 
-## Payment Flow
+## Why Agentic Payments?
 
-1. **User Search**: Look up recipient by username in Supabase
-2. **Payment Creation**: Call thirdweb `/v1/payments` endpoint
-3. **Payment Execution**: Complete via `/v1/payments/{id}` endpoint
-4. **Transaction Recording**: Store details in Supabase
-5. **Real-time Updates**: Status updates via Supabase subscriptions
+AI agents are everywhere — writing code, managing support, running marketing campaigns. But they can't pay for anything. Bearo solves this by giving agents the same payment UX humans get: simple, username-based, multi-chain.
 
-## Supported Networks
+The future isn't just humans paying humans. It's agents paying agents, agents paying humans, and humans paying agents — all through one interface.
 
-| Network | Token | Gas Currency |
-|---------|-------|--------------|
-| Base (Default) | USDC | ETH |
-| Ethereum | USDC | ETH |
-| Polygon | USDC | MATIC |
+## Development
 
-## Development Progress
-
-Bearo is being built live on the $BEARCO pump.fun stream. Current milestones:
-
-- ✅ Authentication system
-- ✅ User profile management
-- ✅ Balance display across chains
-- 🔄 Payment flow implementation
-- 🔄 Transaction history
-- ⏳ Push notifications
-- ⏳ Request payments feature
-
-## Why "Bearo"?
-
-Named after the BearifiedCo brand, Bearo represents our commitment to making crypto accessible. Just like a friendly bear, Bearo is approachable, reliable, and helps you navigate the crypto wilderness without the complexity.
+Bearo is built by the BearifiedCo AI organization — a 39-agent team running 24/7 on a single Mac mini M4 Pro. The Bearo Lead engineer agent handles day-to-day development, coordinated by the Head of Engineering.
